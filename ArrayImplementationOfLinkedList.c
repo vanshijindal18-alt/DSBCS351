@@ -9,7 +9,7 @@ int next[MAX];
 int head = -1;
 int freeIndex = 0;
 
-// Insert a node at the beginning
+
 void insertAtBeginning(int value) {
     if (freeIndex >= MAX) {
         printf("List is full!\n");
@@ -23,7 +23,7 @@ void insertAtBeginning(int value) {
     freeIndex++;
 }
 
-// Insert a node at the end
+
 void insertAtEnd(int value) {
     if (freeIndex >= MAX) {
         printf("List is full!\n");
@@ -48,7 +48,7 @@ void insertAtEnd(int value) {
     freeIndex++;
 }
 
-// Delete a node by value
+
 void deleteNode(int value) {
     if (head == -1) {
         printf("List is empty!\n");
@@ -68,7 +68,7 @@ void deleteNode(int value) {
         return;
     }
 
-    // If deleting the first node
+   
     if (previous == -1) {
         head = next[current];
     } else {
@@ -78,7 +78,7 @@ void deleteNode(int value) {
     printf("%d deleted successfully.\n", value);
 }
 
-// Display the linked list
+
 void display() {
     if (head == -1) {
         printf("List is empty!\n");
@@ -97,7 +97,7 @@ void display() {
     printf("NULL\n");
 }
 
-// Search for an element
+
 void search(int value) {
     int temp = head;
     int position = 1;
